@@ -6,6 +6,8 @@ function pruebaValidarNombre() {
     console.assert(validarNombre('') === 'Este campo debe tener al menos 1 caracter', 'validarNombre no valido que el nombre no sea vacio');
 
     console.assert(validarNombre('sdkfjsldkfjsdlkfjsldkjflsdkfjsdkljfsdkljfsldkjfldskjflskdjflksdjflksdjflksdjflksdjflksdjflksjdflksdjflksjdflksjlksfd') === 'Este campo debe tener menos de 50 caracteres', 'validarNombre no valido que el nombre sea menor a 50 caracteres');
+
+    console.assert(validarNombre('123') === 'Este campo solo puede contener letras', 'validarNombre no valido que el campo nombre solo contenga letras');
 }
 
 function pruebaValidarCiudad() {
